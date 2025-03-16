@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import ProblemSolution from "../components/ProblemSolution";
 import ServicesSection from "../components/ServicesSection";
 import PricingSection from "../components/PricingSection";
