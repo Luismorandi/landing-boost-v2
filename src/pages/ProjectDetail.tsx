@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Clock, Tag, CheckCircle2, Users, Code } from "lucide-react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
 import ContactChat from "../components/ContactChat";
