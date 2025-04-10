@@ -19,10 +19,6 @@ const Index = () => {
       <ProblemSolution />
       <ServicesSection />
       <WorkflowSection />
-      <PricingSection />
-      <PriceCalculator />
-      <TestimonialsSection />
-      <ProjectsSection />
       <CallToAction />
       <Footer />
       <ContactChat />

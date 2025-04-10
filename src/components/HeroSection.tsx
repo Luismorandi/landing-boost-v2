@@ -2,7 +2,10 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="hero-gradient pt-28 pb-16 md:pt-36 md:pb-24">
+    <section
+      className="hero-gradient min-h-screen flex items-center pt-20 pb-10"
+      id="about"
+    >
       <div className="container mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="order-2 md:order-1">
@@ -19,24 +22,38 @@ const HeroSection = () => {
               transforming your visions into tangible realities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-boost-purple hover:bg-opacity-90 text-white text-lg py-6 px-8">
-                Get Started
-              </Button>
               <Button
-                variant="outline"
-                className="border-boost-purple text-boost-purple hover:bg-boost-lightPurple text-lg py-6 px-8"
+                className="bg-boost-purple hover:bg-opacity-90 text-white text-lg py-6 px-8"
+                onClick={() => {
+                  const contactChatElement = document.getElementById(
+                    "contact-chat-button"
+                  );
+
+                  if (contactChatElement) {
+                    (contactChatElement as HTMLButtonElement).click();
+                  }
+                }}
               >
-                See Our Projects
+                Get Started
               </Button>
             </div>
           </div>
           <div className="order-1 md:order-2 flex justify-center">
-            <div className="relative">
-              <img
-                src="/lovable-uploads/dea0e9b8-45da-4998-b0bb-af79cf0b3a65.png"
-                alt="Boost digital transformation"
-                className="max-w-full animate-float"
-              />
+            <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+              <div className="image-carousel">
+                {[
+                  "https://res.cloudinary.com/dowqgqu9v/image/upload/v1740766963/662f1c7a7ad34af693f62505_lamp_left_grydnm.png",
+                  "https://res.cloudinary.com/dowqgqu9v/image/upload/v1740780411/4444_jdtvuy.png",
+                  "https://res.cloudinary.com/dowqgqu9v/image/upload/v1740779529/3333_u9v61o.png",
+                ].map((src, index) => (
+                  <img
+                    key={index}
+                    src={src}
+                    alt={`Boost digital transformation ${index + 1}`}
+                    className="carousel-image"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -2,30 +2,28 @@ import { CheckCircle2, AlertCircle } from "lucide-react";
 
 const ProblemSolution = () => {
   const problems = [
-    "No entienden los términos técnicos y se sienten perdidos.",
-    "Las empresas de desarrollo solo programan lo que se les pide, sin pensar en el negocio.",
-    "Se crean soluciones demasiado complejas cuando algo más simple funcionaría.",
-    "Se pierde tiempo y dinero en desarrollos innecesarios.",
+    "They don't understand technical terms and feel lost.",
+    "Development companies only code what they're told, without considering the business.",
+    "Solutions are often overengineered when something simpler would work.",
+    "Time and money are wasted on unnecessary development.",
   ];
 
   const solutions = [
-    "Hablamos en un lenguaje claro y sin tecnicismos.",
-    "Desarrollamos rápido y sin desperdiciar recursos.",
-    "Nos aseguramos de que tu producto sea fácil de usar y atractivo para tus clientes.",
-    "Te ofrecemos soporte continuo para que tu negocio siga creciendo.",
+    "We speak in clear, non-technical language.",
+    "We develop fast without wasting resources.",
+    "We make sure your product is easy to use and appealing to your customers.",
+    "We provide ongoing support to help your business keep growing.",
   ];
-
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="our-solution" className="section-padding bg-white">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            El Problema y Nuestra Solución
+            The Challenge & Our Solution
           </h2>
           <p className="text-boost-gray text-lg max-w-3xl mx-auto">
-            Muchas personas con ideas de negocio quieren crear productos
-            digitales, pero se encuentran con obstáculos que les impiden
-            avanzar.
+            Many aspiring entrepreneurs want to build digital products, but they
+            often face obstacles that hold them back.
           </p>
         </div>
 
@@ -33,7 +31,7 @@ const ProblemSolution = () => {
           {/* Problem Section */}
           <div className="bg-red-50 rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6 text-red-600 flex items-center">
-              <AlertCircle className="mr-2" /> El Problema
+              <AlertCircle className="mr-2" /> The Challenge
             </h3>
             <ul className="space-y-4">
               {problems.map((problem, index) => (
@@ -50,7 +48,7 @@ const ProblemSolution = () => {
           {/* Solution Section */}
           <div className="bg-green-50 rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6 text-green-600 flex items-center">
-              <CheckCircle2 className="mr-2" /> Nuestra Solución
+              <CheckCircle2 className="mr-2" /> Our Solution
             </h3>
             <ul className="space-y-4">
               {solutions.map((solution, index) => (

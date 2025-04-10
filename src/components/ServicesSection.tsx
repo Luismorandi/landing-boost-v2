@@ -4,27 +4,27 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <Rocket size={36} className="text-boost-purple" />,
-      title: "Lanza tu negocio sin preocupaciones",
+      title: "Launch Your Business Stress-Free",
       description:
-        "Nos encargamos de toda la parte técnica para que te enfoques en lo que realmente importa: tu negocio.",
+        "We handle all the tech so you can focus on what really matters: your business.",
     },
     {
       icon: <CreditCard size={36} className="text-boost-purple" />,
-      title: "Plataforma en tiempo récord",
+      title: "Platform Ready in Record Time",
       description:
-        "Tu plataforma lista en el menor tiempo posible y sin gastar de más. Optimizamos tiempos y costos.",
+        "Get your platform up and running as fast as possible without overspending. We optimize time and cost.",
     },
     {
       icon: <Users size={36} className="text-boost-purple" />,
-      title: "Experiencia del usuario prioritaria",
+      title: "User Experience Comes First",
       description:
-        "Creamos productos digitales que tus clientes amarán usar, no solo nos preocupamos por el código.",
+        "We build digital products your customers will love to use—we care about more than just coding.",
     },
     {
       icon: <Brain size={36} className="text-boost-purple" />,
-      title: "Soporte continuo",
+      title: "Ongoing Support",
       description:
-        "No te dejamos solo. Ofrecemos soporte y mejoras continuas con una suscripción económica.",
+        "We don’t leave you hanging. Get continuous support and improvements with an affordable subscription.",
     },
   ];
 
@@ -33,11 +33,11 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nuestra Propuesta de Valor
+            Our Value Proposition
           </h2>
           <p className="text-boost-gray text-lg max-w-3xl mx-auto">
-            En BOOST, te ayudamos a convertir tu idea en una plataforma digital
-            sin que tengas que preocuparte por la tecnología.
+            At BOOST, we help you turn your idea into a digital platform—without
+            having to worry about the tech.
           </p>
         </div>
 

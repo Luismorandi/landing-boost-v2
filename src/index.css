@@ -117,3 +117,55 @@
 .slider-thumb {
   @apply w-5 h-5 bg-white border-2 border-primary rounded-full cursor-pointer;
 }
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInOut 9s infinite;
+}
+
+/* Staggered animation for each image */
+.carousel-image:nth-child(1) {
+  animation-delay: 0s;
+}
+.carousel-image:nth-child(2) {
+  animation-delay: 3s;
+}
+.carousel-image:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}

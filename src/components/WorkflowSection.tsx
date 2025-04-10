@@ -4,39 +4,37 @@ const WorkflowSection = () => {
   const steps = [
     {
       number: "1",
-      title: "Conversación inicial",
+      title: "Initial Conversation",
       description:
-        "Hablamos sobre tu idea en una reunión gratuita para entender tus necesidades.",
+        "We discuss your idea in a free meeting to understand your needs.",
     },
     {
       number: "2",
-      title: "Estrategia clara",
+      title: "Clear Strategy",
       description:
-        "Te damos una estrategia clara y un presupuesto sin sorpresas.",
+        "We provide a clear strategy and a budget with no surprises.",
     },
     {
       number: "3",
-      title: "Desarrollo rápido",
+      title: "Fast Development",
       description:
-        "Desarrollamos rápidamente y con total transparencia, manteniendo comunicación constante.",
+        "We develop quickly and transparently, keeping communication open at all times.",
     },
     {
       number: "4",
-      title: "Lanzamiento",
+      title: "Launch",
       description:
-        "Tu negocio digital está listo para lanzarse en el menor tiempo posible.",
+        "Your digital business is ready to launch in the shortest time possible.",
     },
   ];
 
   return (
-    <section id="how-it-works" className="section-padding bg-white">
+    <section id="how-we-work" className="section-padding bg-white">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            ¿Cómo trabajamos?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">How We Work</h2>
           <p className="text-boost-gray text-lg max-w-3xl mx-auto">
-            Nuestro proceso está diseñado para ser eficiente y transparente.
+            Our process is designed to be efficient and transparent.{" "}
           </p>
         </div>
 
@@ -67,44 +65,45 @@ const WorkflowSection = () => {
 
         <div className="mt-16 bg-boost-lightPurple rounded-xl p-8">
           <h3 className="text-2xl font-bold mb-6 text-center">
-            ¿Por qué elegir BOOST?
+            Why Choose BOOST?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex items-start">
               <CheckCircle2 className="text-boost-purple mr-3 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-bold mb-1">
-                  No necesitas conocimientos técnicos
+                  No Technical Knowledge Needed
                 </h4>
                 <p className="text-boost-gray">
-                  Hablamos en un lenguaje claro, sin jerga técnica.
+                  We speak in clear, jargon-free language.
                 </p>
               </div>
             </div>
             <div className="flex items-start">
               <CheckCircle2 className="text-boost-purple mr-3 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">Enfoque en el negocio</h4>
+                <h4 className="font-bold mb-1">Business-First Approach</h4>
                 <p className="text-boost-gray">
-                  No solo nos importa el código, sino el éxito de tu empresa.
+                  We care not just about code, but about the success of your
+                  business.
                 </p>
               </div>
             </div>
             <div className="flex items-start">
               <CheckCircle2 className="text-boost-purple mr-3 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">Desarrollo ágil</h4>
+                <h4 className="font-bold mb-1">Agile Development</h4>
                 <p className="text-boost-gray">
-                  Sin burocracia ni procesos innecesarios.
+                  No bureaucracy or unnecessary processes.
                 </p>
               </div>
             </div>
             <div className="flex items-start">
               <CheckCircle2 className="text-boost-purple mr-3 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">Soporte a largo plazo</h4>
+                <h4 className="font-bold mb-1">Long-Term Support</h4>
                 <p className="text-boost-gray">
-                  Te acompañamos en el crecimiento de tu negocio.
+                  We're with you as your business grows.
                 </p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
@@ -18,32 +18,51 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           <Link
-            to="/#about"
-            className="text-gray-800 hover:text-boost-purple transition-colors"
+            to="about"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-800 hover:text-boost-purple transition-colors"
           >
             About Us
           </Link>
           <Link
-            to="/#how-it-works"
-            className="text-gray-800 hover:text-boost-purple transition-colors"
+            to="our-solution"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-800 hover:text-boost-purple transition-colors"
           >
-            How It Works
+            Our Solution
           </Link>
           <Link
-            to="/#pricing"
-            className="text-gray-800 hover:text-boost-purple transition-colors"
+            to="how-we-work"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-800 hover:text-boost-purple transition-colors"
           >
-            Our Pricing
+            How we work
           </Link>
           <Link
-            to="/#projects"
-            className="text-gray-800 hover:text-boost-purple transition-colors"
+            to="get-started"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-800 hover:text-boost-purple transition-colors"
           >
-            Projects
+            Get Started
           </Link>
         </div>
 
-        <Button className="hidden md:flex bg-boost-purple hover:bg-opacity-90 text-white">
+        <Button
+          className="hidden md:flex bg-boost-purple hover:bg-opacity-90 text-white"
+          onClick={() => {
+            const contactChatElement = document.getElementById(
+              "contact-chat-button"
+            );
+
+            if (contactChatElement) {
+              (contactChatElement as HTMLButtonElement).click();
+            }
+          }}
+        >
           Contact Us
         </Button>
 
@@ -81,14 +100,18 @@ const Navbar = () => {
             >
               Our Pricing
             </Link>
-            <Link
-              to="/#projects"
-              className="text-gray-800 hover:text-boost-purple transition-colors py-2"
-              onClick={() => setIsOpen(false)}
+            <Button
+              className="bg-boost-purple hover:bg-opacity-90 text-white w-full "
+              onClick={() => {
+                const contactChatElement = document.getElementById(
+                  "contact-chat-button"
+                );
+
+                if (contactChatElement) {
+                  (contactChatElement as HTMLButtonElement).click();
+                }
+              }}
             >
-              Projects
-            </Link>
-            <Button className="bg-boost-purple hover:bg-opacity-90 text-white w-full">
               Contact Us
             </Button>
           </div>

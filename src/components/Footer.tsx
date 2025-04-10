@@ -1,7 +1,7 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -15,8 +15,8 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-400 mb-6">
-              Te ayudamos a convertir tu idea en una plataforma digital sin que
-              tengas que preocuparte por la tecnología.
+              we help you turn your idea into a digital platform—without having
+              to worry about the tech.
             </p>
             <div className="space-y-3">
               <div className="flex items-center">
@@ -39,17 +39,20 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={18} className="text-gray-400 mr-3" />
-                <span className="text-gray-400">Argentina, para el mundo.</span>
+                <span className="text-gray-400">
+                  From the World, for the World.
+                </span>
               </div>
             </div>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Servicios</h3>
+            <h3 className="text-xl font-bold mb-6">Services</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Landing Pages
@@ -58,93 +61,87 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Aplicaciones Web
+                  WebApps
                 </a>
               </li>
               <li>
                 <a
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  CRM Personalizado
+                  CRM
                 </a>
               </li>
               <li>
                 <a
                   href="#"
+                  onClick={(e) => e.preventDefault()}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   E-commerce
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Soporte Técnico
-                </a>
-              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Enlaces</h3>
+            <h3 className="text-xl font-bold mb-6">Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/#about"
+                  to="about"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Acerca de Nosotros
+                  About us
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/#how-it-works"
+                  to="our-solution"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Cómo Trabajamos
+                  Our Solution
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/#pricing"
+                  to="how-we-work"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Precios
+                  How we works
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/#projects"
+                  to="get-started"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Proyectos
+                  Get started
                 </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  FAQ
-                </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Boletín Informativo</h3>
+            <h3 className="text-xl font-bold mb-6">Newsletter</h3>
             <p className="text-gray-400 mb-4">
-              Suscríbete para recibir nuestras últimas novedades y consejos
-              sobre negocios digitales.
+              Stay updated with our latest news and digital business tips.
             </p>
             <div className="flex">
               <Input
-                placeholder="Tu correo electrónico"
+                placeholder="Your email"
                 className="bg-gray-800 text-white border-gray-700 focus:border-boost-purple"
               />
               <Button className="bg-boost-purple hover:bg-opacity-90 ml-2">
