@@ -22,21 +22,13 @@ const Footer = () => {
               <div className="flex items-center">
                 <Mail size={18} className="text-gray-400 mr-3" />
                 <a
-                  href="mailto:info@boostdev.com"
+                  href="mailto:hello@boost-withus.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  info@boostdev.com
+                  hello@boost-withus.com
                 </a>
               </div>
-              <div className="flex items-center">
-                <Phone size={18} className="text-gray-400 mr-3" />
-                <a
-                  href="tel:+123456789"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  +1 (234) 567-890
-                </a>
-              </div>
+
               <div className="flex items-center">
                 <MapPin size={18} className="text-gray-400 mr-3" />
                 <span className="text-gray-400">
