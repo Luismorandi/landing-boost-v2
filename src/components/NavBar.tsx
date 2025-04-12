@@ -80,25 +80,31 @@ const Navbar = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md pt-2 pb-4 px-6">
           <div className="flex flex-col space-y-4">
             <Link
-              to="/#about"
+              to="about"
+              smooth={true}
+              duration={500}
               className="text-gray-800 hover:text-boost-purple transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
               About Us
             </Link>
             <Link
-              to="/#how-it-works"
+              to="our-solution"
+              smooth={true}
+              duration={500}
               className="text-gray-800 hover:text-boost-purple transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
-              How It Works
+              Our solutions
             </Link>
             <Link
-              to="/#pricing"
+              to="how-we-work"
+              smooth={true}
+              duration={500}
               className="text-gray-800 hover:text-boost-purple transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
-              Our Pricing
+              How we work
             </Link>
             <Button
               className="bg-boost-purple hover:bg-opacity-90 text-white w-full "
